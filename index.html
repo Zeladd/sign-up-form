@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,7 +11,44 @@
     <script src="./logic.js"></script>
     <title>Sign Up Form</title>
 </head>
+
 <body>
-    
+    <header>
+        <h1>Become a Wizard</h1>
+        <p>Photo by X from Y</p>
+    </header>
+    <main>
+        <article>
+            <p>This is not a real online service! You know you need something like this in your life to help you realize
+                your deepest dreams. Sign up <em>now</em> to get started.</p>
+            <p>You <em>know</em> you want to.</p>
+        </article>
+        <form action="#" method="post">
+            <fieldset>
+                <legend>Let's do this!</legend>
+
+                <label for="first-name">FIRST NAME</label>
+                <input type="text" name="first-name" id="first-name">
+
+                <label for="last-name">LAST NAME</label>
+                <input type="text" name="last-name" id="last-name">
+
+                <label for="email">EMAIL</label>
+                <input type="email" name="email" id="email">
+
+                <label for="phone-number">PHONE NUMBER</label>
+                <input type="text" name="phone-number" id="phone-number">
+
+                <label for="password">PASSWORD</label>
+                <input type="password" name="password" id="password">
+
+                <label for="confirm-password">CONFIRM PASSWORD</label>
+                <input type="password" name="confirm-password" id="confirm-password">
+            </fieldset>
+            <button type="submit">Create Account</button>
+        </form>
+        <p>Already have an account? <a href="#">Log in</a></p>
+    </main>
 </body>
+
 </html>
