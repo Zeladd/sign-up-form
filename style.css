@@ -1,3 +1,32 @@
-
+body {
+  display: flex;
+  flex-direction: row;
+  height: 100vh;
+}
+body header {
+  flex: 2 1 33vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  background-image: url("./images/banner.jpg");
+  background-size: cover;
+  background-position: center;
+}
+body header div {
+  background-color: rgba(0, 0, 0, 0.4);
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 25vh;
+}
+body main {
+  flex: 1 2 66vw;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
 
 /*# sourceMappingURL=style.css.map */
