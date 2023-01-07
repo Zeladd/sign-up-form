@@ -2,6 +2,7 @@ body {
   display: flex;
   flex-direction: row;
   height: 100vh;
+  color: #9f8353;
 }
 body header {
   flex: 2 1 33vw;
@@ -22,11 +23,72 @@ body header div {
   margin-top: 25vh;
 }
 body main {
+  padding-left: 5vh;
   flex: 1 2 66vw;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   justify-content: center;
+  background-color: #2d2c25;
+}
+body main article {
+  display: flex;
+  flex-direction: column;
+}
+body main form {
+  display: flex;
+  flex-direction: column;
+  width: 36vw;
+}
+body main form fieldset {
+  display: flex;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+body main form input {
+  width: 15rem;
+  height: 1rem;
+}
+body main form button {
+  width: 15rem;
+  height: 3rem;
+  border: 0;
+  border-radius: 100px;
+  background-color: #f58e52;
+  color: #2d2c25;
+  font-weight: Bold;
+  transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+}
+body main form button:hover {
+  background-color: #463e34;
+  box-shadow: 0 0 20px #3c3c30;
+  color: #f58e52;
+}
+body main form button:active {
+  background-color: #3c3c30;
+  transition: all 0.25s;
+  -webkit-transition: all 0.25s;
+  box-shadow: none;
+  color: #f58e52;
+}
+
+em {
+  color: #f58e52;
+  font-style: italic;
+}
+
+u, a {
+  color: #f58e52;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
 }
 
 /*# sourceMappingURL=style.css.map */
