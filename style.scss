@@ -1,26 +1,26 @@
-$accent-color : #f58e52;
-$font-color : #9f8353;
-$bg-color : #2d2c25;
-$butt-hover : #463e34;
-$butt-shadow : #3c3c30;
-$color2 : #967d52;
-$color3 : #5b4f3e;
-$color7 : #6e5e45;
+$accent-color: #f58e52;
+$font-color: #9f8353;
+$bg-color: #2d2c25;
+$butt-hover: #463e34;
+$butt-shadow: #3c3c30;
+$color2: #967d52;
+$color3: #5b4f3e;
+$color7: #6e5e45;
 
 body {
-    font-family : 'Rowdies', 'Roboto', 'Solway',sans-serif, serif;
+    font-family: "Rowdies", "Roboto", "Solway", sans-serif, serif;
     display: flex;
     flex-direction: row;
     height: 100vh;
     color: $font-color;
 
     header {
-        flex: 2 1 33vw;
+        flex: 2 0 33vw;
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: space-between;
-        background-image:url("./images/banner.jpg");
+        background-image: url("./images/banner.jpg");
         background-size: cover;
         background-position: center;
 
@@ -30,28 +30,54 @@ body {
             display: flex;
             justify-content: center;
             align-items: center;
+            flex-wrap: wrap;
             margin-top: 25vh;
+
+            h1 {
+                font-size: 40px;
+                font-weight: 700;
+                text-align: center;
+            }
+        }
+
+        p {
+            font-size: 19px;
+            font-weight: 300;
         }
     }
 
     main {
-        padding-left: 5vh;
         flex: 1 2 66vw;
         display: flex;
         flex-direction: column;
         align-items: flex-start;
         justify-content: center;
         background-color: $bg-color;
+        font-size: 29px;
+        font-weight: normal;
 
         article {
             display: flex;
             flex-direction: column;
+            padding-left: 5vh;
         }
 
-        form {
+        form {  
             display: flex;
             flex-direction: column;
-            width: 36vw;
+            width: 100%;
+            font-size: 19px;
+            font-weight: 300;
+
+            legend {
+                font-size: 29px;
+                font-weight: 400;
+            }
+
+            #custom-bg {
+                padding-left: 5vh;
+                background-color: $butt-hover;
+            }
 
             fieldset {
                 display: flex;
@@ -60,6 +86,7 @@ body {
                 border: 0;
                 margin: 0;
                 padding: 0;
+                width: 520px;
             }
 
             input {
@@ -68,6 +95,7 @@ body {
             }
 
             button {
+                margin-left: 5vh;;
                 width: 15rem;
                 height: 3rem;
                 border: 0;
@@ -77,14 +105,15 @@ body {
                 font-weight: Bold;
                 transition: all 0.5s;
                 -webkit-transition: all 0.5s;
+                font-size: 19px;
             }
-              
+
             button:hover {
                 background-color: $butt-hover;
                 box-shadow: 0 0 20px $butt-shadow;
                 color: $accent-color;
             }
-              
+
             button:active {
                 background-color: $butt-shadow;
                 transition: all 0.25s;
@@ -96,12 +125,13 @@ body {
     }
 }
 
-em{
+em {
     color: #f58e52;
-    font-style: italic; 
+    font-style: italic;
 }
 
-u, a {
+u,
+a {
     color: #f58e52;
 }
 
@@ -109,4 +139,10 @@ u, a {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+}
+
+#login {
+    font-size: 19px;
+    font-weight: 300;
+    padding-left: 5vh;
 }
