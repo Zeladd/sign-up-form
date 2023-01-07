@@ -3,7 +3,7 @@ $font-color: #9f8353;
 $bg-color: #2d2c25;
 $butt-hover: #463e34;
 $butt-shadow: #3c3c30;
-$color2: #967d52;
+$input-bg: #967d52;
 $color3: #5b4f3e;
 $color7: #6e5e45;
 
@@ -101,6 +101,12 @@ body {
             input {
                 width: 15rem;
                 height: 1.5rem;
+                background-color: $input-bg;
+                color: $accent-color;
+            }
+
+            input:focus {
+                outline-color: $accent-color;
             }
 
             button {
@@ -112,8 +118,8 @@ body {
                 background-color: $accent-color;
                 color: $bg-color;
                 font-weight: Bold;
-                transition: all 0.5s;
                 -webkit-transition: all 0.5s;
+                transition: all 0.5s;
                 font-size: 19px;
                 margin-top: 40px;
                 margin-bottom: 20px;
