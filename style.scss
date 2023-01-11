@@ -95,7 +95,7 @@ body {
                 border: 0;
                 margin: 0;
                 padding: 0;
-                width: 520px;
+                width: 620px;
             }
 
             input {
@@ -103,6 +103,8 @@ body {
                 height: 1.5rem;
                 background-color: $input-bg;
                 color: $accent-color;
+                border-radius: 8px;
+                border-color: $accent-color;
             }
 
             input:focus {
@@ -156,6 +158,7 @@ a {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    margin-right: 3rem;
 }
 
 #login {

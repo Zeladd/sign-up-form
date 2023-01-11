@@ -78,13 +78,15 @@ body main form fieldset {
   border: 0;
   margin: 0;
   padding: 0;
-  width: 520px;
+  width: 620px;
 }
 body main form input {
   width: 15rem;
   height: 1.5rem;
   background-color: #967d52;
   color: #f58e52;
+  border-radius: 8px;
+  border-color: #f58e52;
 }
 body main form input:focus {
   outline-color: #f58e52;
@@ -131,6 +133,7 @@ a {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  margin-right: 3rem;
 }
 
 #login {
